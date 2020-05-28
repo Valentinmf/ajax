@@ -1,11 +1,10 @@
-# README valentin figueiredo s8 ajax gmail like sorry c'est pas beau
+# README valentin figueiredo s8 ajax gmail like
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This is very moche sorry .
 
 Things you may want to cover:
 
-* Ruby version
+* Ruby version 
 
 * System dependencies
 
