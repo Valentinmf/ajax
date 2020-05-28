@@ -1,1 +1,17 @@
-<%= link_to "", read_path, class: "btn btn-primary", remote: true %>
+<ul id="email-list">
+  <% @emails.each do |email| %>
+    <li>"<%= email.objet %>" <b><%= email.body  %></b></li>
+  <% end %>
+</ul>
+
+<ul class="list-group list-group-horizontal-lg">
+  <%= form_tag(emails_path, method: :post, class: "form", remote: true) do %>
+    <label for="objet">Object
+    <%= text_field_tag  :objet %>
+
+    <label for="body">Body
+    <%= text_field_tag  :body %>
+
+    <%= submit_tag 'create', :name => 'commit'%>
+  <% end %>
+</ul>
